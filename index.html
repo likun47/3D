@@ -12,6 +12,35 @@
             perspective: 800px
         }
 
+        .nav{
+            width: 1210px;
+            height: 48px;
+            line-height: 48px;
+            margin: 50px auto;
+            background-color: #E8E7E3;
+            /* 设置为弹性容器 */
+            display: flex;
+        }
+
+        .nav li{
+            /* 设置增长系数 */
+            flex-grow: 1;
+        }
+
+        .nav a{
+            display: block;
+            color: #808080;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+            
+        }
+
+        .nav a:hover{
+            background-color: #636363;
+            color: #fff;
+        }
+
         /* body{
             background-color: #bfa;
         } */
@@ -156,6 +185,17 @@
 </head>
 
 <body>
+
+    <!--Navigation bar-->>
+    <ul class="nav">
+        <li><a href="#">The favorite</a></li>
+        <li><a href="#">Movie type</a></li>
+        <li><a href="#">Actors</a></li>
+        <li><a href="#">Direcotor</a></li>
+        <li><a href="#">behind- the-scenes look</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Donate</a></li>
+    </ul>
 
     <!-- news list outside container -->
     <div class="news-wrapper">

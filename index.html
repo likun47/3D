@@ -9,7 +9,7 @@
 
     <style>
         html {
-            perspective: 800px
+            perspective: 1800px
         }
 
         .nav{
@@ -18,12 +18,12 @@
             line-height: 48px;
             margin: 50px auto;
             background-color: #E8E7E3;
-            /* 设置为弹性容器 */
+            /* flex container */
             display: flex;
         }
 
         .nav li{
-            /* 设置增长系数 */
+            /* set up flex-grow */
             flex-grow: 1;
         }
 
@@ -51,7 +51,7 @@
         }
 
         /* container style */
-        .news-wrapper{
+        .movie-wrapper{
             /* width */
             width: 300px;
             /* height */
@@ -63,8 +63,8 @@
             border-top: 1px solid #ddd;
         }
 
-        /* news-title style */
-        .news-title{
+        /* movie-title style */
+        .movie-title{
             display: inline-block;
             height: 30px;
             border-top: 1px red solid;
@@ -74,38 +74,38 @@
         }
 
         /* title a tag style */
-        .news-title a{
+        .movie-title a{
             color: #40406B;
             font-weight: bold;
         }
 
         /* rotate object container height  */
-        .news-img{
+        .movie-img{
             height: 300px;
         }
 
         /* font */
-        .news-img .img-title{
+        .movie-img .img-title{
             margin-top: -30px;
             color: #fff;
             font-weight: bold;
             padding-left: 30px;
         }
 
-        /* news list style */
-        .news-list{
+        /* movie list style */
+        .movie-list{
             margin-top: 20px;
             /* padding-left: 14px; */
             /* list-style: square; */
         }
 
         /* li */
-        .news-list li{
+        .movie-list li{
             margin-bottom: 17px;
         }
 
          /* before element add */
-         .news-list li::before{
+         .movie-list li::before{
             content: '■';
             color: rgb(218, 218, 218);
             font-size: 12px;
@@ -113,14 +113,14 @@
         }
 
         /* li font setting */
-        .news-list li a{
+        .movie-list li a{
             font-size: 14px;
             color: #666;
         }
 
        
         /* mouse hover style */
-        .news-list li a:hover{
+        .movie-list li a:hover{
             color: red;
         }
 
@@ -173,7 +173,7 @@
         }
 
         @keyframes rotate {
-            form{
+            from{
                 transform:rotateX(0) rotateZ(0)
             }
 
@@ -192,20 +192,20 @@
         <li><a href="#">Movie type</a></li>
         <li><a href="#">Actors</a></li>
         <li><a href="#">Direcotor</a></li>
-        <li><a href="#">behind- the-scenes look</a></li>
+        <li><a href="#">Behind- the-scenes look</a></li>
         <li><a href="#">Contact us</a></li>
         <li><a href="#">Donate</a></li>
     </ul>
 
-    <!-- news list outside container -->
-    <div class="news-wrapper">
+    <!-- movie list outside container -->
+    <div class="movie-wrapper">
         <!-- title tag -->
-        <h2 class="news-title">
+        <h2 class="movie-title">
             <a href="#">Movie posts</a>
         </h2>
 
         <!-- object container -->
-        <div class="news-img">
+        <div class="movie-img">
             <a href="#">
                 <!-- create cube container -->
                 <div class="cube">
@@ -241,8 +241,8 @@
             </a>
         </div>
 
-        <!-- news list -->
-        <ul class="news-list">
+        <!-- movie list -->
+        <ul class="movie-list">
             <li>
                 <a href="#">Life is beautiful</a>
             </li>
